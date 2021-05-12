@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+} from 'react-router-dom'
+import loadable from '@loadable/component'
+
+import Loading from './components/Loading'
+
+const Home = loadable(() => import(/* webpackChunkName: 'home' */'./pages/Home'), { fallback: <Loading /> })
+const Page1 = loadable(() => import(/* webpackChunkName: 'page1' */'./pages/Page1'), { fallback: <Loading /> })
+const Page2 = loadable(() => import(/* webpackChunkName: 'page2' */'./pages/Page2'), { fallback: <Loading /> })
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Router>
+      <header>
+        <Link to="/page1">
+          Page1
+        </Link>
+        <Link to="/page2">
+          Page2
+        </Link>
       </header>
-    </div>
-  );
+      <Switch>
+        <Route path="/" component={Home} exact />
+        <Route path="/page1" component={Page1} />
+        <Route path="/page2" component={Page2} />
+      </Switch>
+    </Router>
+  )
 }
 
-export default App;
+export default App
