@@ -84,7 +84,10 @@ module.exports = {
     'linebreak-style': [0, 'error', 'windows'], // 运行window环境
 
     // typescript
-    '@typescript-eslint/explicit-module-boundary-types': [0],
-    '@typescript-eslint/no-explicit-any': ['warn'],
+    '@typescript-eslint/explicit-module-boundary-types': [0], // return不是必须
+    '@typescript-eslint/no-explicit-any': ['warn'], // 使用any警告
+    '@typescript-eslint/no-var-requires': [0], // 可以用require
+    'indent': 'off',
+    '@typescript-eslint/indent': ['error', 2]
   }
 }

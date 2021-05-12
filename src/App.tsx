@@ -7,9 +7,8 @@ import {
 } from 'react-router-dom'
 import loadable from '@loadable/component'
 
+import Navbar from './components/Navbar'
 import Loading from './components/Loading'
-
-import './App.css'
 
 const Home = loadable(() => import(/* webpackChunkName: 'home' */'./pages/Home'), { fallback: <Loading /> })
 const Page1 = loadable(() => import(/* webpackChunkName: 'page1' */'./pages/Page1'), { fallback: <Loading /> })
@@ -18,6 +17,7 @@ const Page2 = loadable(() => import(/* webpackChunkName: 'page2' */'./pages/Page
 function App() {
   return (
     <Router>
+      <Navbar />
       <header>
         <Link to="/page1">
           Page1

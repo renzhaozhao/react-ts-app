@@ -1,6 +1,8 @@
 import React, { FC, useState, useEffect } from 'react'
 import { Button } from 'antd'
 
+import './index.less'
+
 export interface Props {
   name: string
 }
