@@ -6,7 +6,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "lint": "eslint --ext .tsx,.ts,.js src/"
+    "lint": "eslint --ext .ts,.tsx,.js,.jsx src/",
+    "postinstall": "husky install"
   },
   "devDependencies": {
     "@types/react": "^17.0.5",
@@ -16,6 +17,7 @@
     "babel-plugin-module-resolver": "^4.1.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-import-resolver-typescript": "^2.4.0",
+    "husky": "^6.0.0",
     "prettier": "2.3.0"
   },
   "dependencies": {
