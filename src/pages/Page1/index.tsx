@@ -1,10 +1,11 @@
-import React, { FunctionComponent, useState, useEffect } from 'react'
+import React, { FC, useState, useEffect } from 'react'
+import { Button } from 'antd'
 
 export interface Props {
   name: string
 }
 
-const Page1:FunctionComponent = () => {
+const Page1:FC = () => {
   const [count, setCount] = useState(0)
 
   const a = (num:number) => {
@@ -22,7 +23,7 @@ const Page1:FunctionComponent = () => {
       <div>title11</div>
       <div>{count}</div>
       <div>
-        <button type="button" onClick={() => { setCount(count + 1) }}>+</button>
+        <Button type="primary" onClick={() => { setCount(count + 1) }}>+</Button>
       </div>
     </div>
   )

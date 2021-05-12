@@ -1,6 +1,6 @@
-import React, { FunctionComponent } from 'react'
+import React, { FC } from 'react'
 
-const Message:FunctionComponent<{msg?:string}> = ({ msg }) => (
+const Message:FC<{msg?:string}> = ({ msg }) => (
   <div>Message is {msg}</div>
 )
 
