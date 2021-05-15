@@ -7,10 +7,10 @@ export interface Props {
   name: string
 }
 
-const Page1:FC = () => {
+const Page1: FC = () => {
   const [count, setCount] = useState(0)
 
-  const a = (num:number) => {
+  const a = (num: number) => {
     const b = 2
     return num + b
   }
@@ -25,7 +25,14 @@ const Page1:FC = () => {
       <div>title11</div>
       <div>{count}</div>
       <div>
-        <Button type="primary" onClick={() => { setCount(count + 1) }}>+</Button>
+        <Button
+          type="primary"
+          onClick={() => {
+            setCount(count + 1)
+          }}
+        >
+          +
+        </Button>
       </div>
     </div>
   )
