@@ -1,12 +1,7 @@
-import React from 'react'
-import { withRouter } from 'react-router-dom'
+import React, { FC } from 'react'
 
 import './index.less'
 
-function Page2() {
-  return (
-    <h2>Page2</h2>
-  )
-}
+const Page2: FC = () => <h2>Page2</h2>
 
-export default withRouter(Page2)
+export default Page2
