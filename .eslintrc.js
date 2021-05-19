@@ -87,6 +87,8 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': [0], // return不是必须
     '@typescript-eslint/no-explicit-any': ['warn'], // 使用any警告
     '@typescript-eslint/no-var-requires': [0], // 可以用require
+
+    // 解决vscode‘loc’报错
     'indent': 'off',
     '@typescript-eslint/indent': ['error', 2]
   }
