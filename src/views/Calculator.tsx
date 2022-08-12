@@ -1,7 +1,10 @@
 import { Input } from 'antd'
 import '@/styles/calculator.less'
+import Bignumber from 'bignumber.js'
 import { useState } from 'react'
 const Calculator = () => {
+  console.log(Bignumber(2).plus(Bignumber(2.4)).toString())
+
   const [number, setNumber] = useState('')
 
   const pressNumber = (num: number) => {

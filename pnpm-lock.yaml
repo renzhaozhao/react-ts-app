@@ -6,6 +6,7 @@ specifiers:
   '@types/react-dom': ^17.0.10
   '@vitejs/plugin-react': ^1.3.0
   antd: ^4.22.4
+  bignumber.js: ^9.1.0
   less: ^4.1.3
   react: ^17.0.2
   react-dom: ^17.0.2
@@ -15,6 +16,7 @@ specifiers:
 
 dependencies:
   antd: 4.22.4_sfoxds7t5ydpegc3knd667wn6m
+  bignumber.js: 9.1.0
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-router-dom: 6.3.0_sfoxds7t5ydpegc3knd667wn6m
@@ -483,6 +485,10 @@ packages:
 
   /async-validator/4.2.5:
     resolution: {integrity: sha512-7HhHjtERjqlNbZtqNqy2rckN/SpOOlmDliet+lP7k+eKZEjPk3DgyeU9lIXLdeLz0uBbbVp+9Qdow9wJWgwwfg==}
+    dev: false
+
+  /bignumber.js/9.1.0:
+    resolution: {integrity: sha512-4LwHK4nfDOraBCtst+wOWIHbu1vhvAPJK8g8nROd4iuc3PSEjWif/qwbkh8jwCJz6yDBvtU4KPynETgrfh7y3A==}
     dev: false
 
   /browserslist/4.20.2:
