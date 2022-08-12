@@ -10,6 +10,10 @@ const routes: RouteObject[] = [
     path: '/about',
     element: lazy(() => import('@/views/About')),
   },
+  {
+    path: '/calculator',
+    element: lazy(() => import('@/views/Calculator')),
+  },
 ]
 
 export default routes

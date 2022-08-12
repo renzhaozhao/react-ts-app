@@ -8,6 +8,7 @@ const App: FC = () => (
       <div>
         <Link to="/">home</Link>
         <Link to="/about">about</Link>
+        <Link to="/calculator">Calculator</Link>
       </div>
       <Routes>
         {routes.map((route: any) => (

@@ -14,4 +14,21 @@ export default defineConfig({
     port: 3000,
   },
   plugins: [react()],
+  // css预处理
+  css: {
+    postcss: {
+      // plugins: [require('autoprefixer')],
+    },
+    preprocessorOptions: {
+      less: {
+        modifyVars: {
+          hack: `true; @import (reference) "${resolve(
+            'src/config/variable.less'
+          )}";`,
+          // 'primary-color': '#26334d',
+        },
+        javascriptEnabled: true,
+      },
+    },
+  },
 })
